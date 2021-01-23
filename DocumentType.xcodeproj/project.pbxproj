@@ -14,6 +14,8 @@
 		2694385B25BC204000490732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2694385925BC204000490732 /* Main.storyboard */; };
 		2694386725BC204000490732 /* DocumentTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694386625BC204000490732 /* DocumentTypeTests.swift */; };
 		2694387225BC204000490732 /* DocumentTypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694387125BC204000490732 /* DocumentTypeUITests.swift */; };
+		2694388025BC22D600490732 /* Document.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2694387F25BC22D600490732 /* Document.storyboard */; };
+		2694388225BC303B00490732 /* DocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2694388125BC303B00490732 /* DocumentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		2694386D25BC204000490732 /* DocumentTypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DocumentTypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2694387125BC204000490732 /* DocumentTypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentTypeUITests.swift; sourceTree = "<group>"; };
 		2694387325BC204000490732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2694387F25BC22D600490732 /* Document.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Document.storyboard; sourceTree = "<group>"; };
+		2694388125BC303B00490732 /* DocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +105,10 @@
 				2694385125BC203B00490732 /* AppDelegate.swift */,
 				2694385325BC203B00490732 /* ViewController.swift */,
 				2694385525BC203B00490732 /* Document.swift */,
+				2694388125BC303B00490732 /* DocumentViewController.swift */,
 				2694385725BC204000490732 /* Assets.xcassets */,
 				2694385925BC204000490732 /* Main.storyboard */,
+				2694387F25BC22D600490732 /* Document.storyboard */,
 				2694385C25BC204000490732 /* Info.plist */,
 				2694385D25BC204000490732 /* DocumentType.entitlements */,
 			);
@@ -231,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2694388025BC22D600490732 /* Document.storyboard in Resources */,
 				2694385825BC204000490732 /* Assets.xcassets in Resources */,
 				2694385B25BC204000490732 /* Main.storyboard in Resources */,
 			);
@@ -258,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2694385425BC203B00490732 /* ViewController.swift in Sources */,
+				2694388225BC303B00490732 /* DocumentViewController.swift in Sources */,
 				2694385225BC203B00490732 /* AppDelegate.swift in Sources */,
 				2694385625BC203B00490732 /* Document.swift in Sources */,
 			);

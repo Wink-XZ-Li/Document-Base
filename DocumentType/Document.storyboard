@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="16097.2"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Window Controller-->
+        <scene sceneID="nTb-wh-H6e">
+            <objects>
+                <windowController storyboardIdentifier="DocumentWindowController" id="jR4-kV-WqS" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="" animationBehavior="default" id="7ul-7k-0xY">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="294" y="275" width="480" height="308"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1920" height="1057"/>
+                        <connections>
+                            <outlet property="delegate" destination="jR4-kV-WqS" id="uHP-hn-PTW"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="shr-kZ-XbS" kind="relationship" relationship="window.shadowedContentViewController" id="nXg-NP-FPf"/>
+                    </connections>
+                </windowController>
+                <customObject id="2Rv-OC-9mt" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="53"/>
+        </scene>
+        <!--Document View Controller-->
+        <scene sceneID="L37-O2-Sbj">
+            <objects>
+                <viewController id="shr-kZ-XbS" customClass="DocumentViewController" customModule="DocumentType" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" id="D8T-jh-ZGa">
+                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <textField verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" preferredMaxLayoutWidth="246" translatesAutoresizingMaskIntoConstraints="NO" id="589-0f-Apn">
+                                <rect key="frame" x="116" y="125" width="248" height="21"/>
+                                <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="center" title="Your document contents here" id="jXE-ux-Y4N">
+                                    <font key="font" metaFont="system" size="18"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="589-0f-Apn" firstAttribute="centerX" secondItem="D8T-jh-ZGa" secondAttribute="centerX" id="Csz-dW-hQO"/>
+                            <constraint firstItem="589-0f-Apn" firstAttribute="centerY" secondItem="D8T-jh-ZGa" secondAttribute="centerY" id="ylI-hu-BMx"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <customObject id="JKa-Sx-feZ" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="106" y="520"/>
+        </scene>
+    </scenes>
+</document>

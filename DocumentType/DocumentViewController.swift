@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  DocumentViewController.swift
 //  DocumentType
 //
 //  Created by Wink on 2021/1/23.
@@ -8,7 +8,7 @@
 
 import Cocoa
 
-class MainViewController: NSViewController {
+class DocumentViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,4 +24,3 @@ class MainViewController: NSViewController {
 
 
 }
-
